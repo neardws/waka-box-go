@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/journey-ad/waka-box-go/pkg/wakabox"
+	"github.com/neardws/waka-box-go/pkg/wakabox"
 	"github.com/google/go-github/github"
 	"github.com/joho/godotenv"
 )
@@ -47,7 +47,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	filename := "📊 每周工作报告"
+	filename := "📊 Weekly development breakdown"
 	if updateGist {
 
 		gist, err := box.GetGist(ctx, gistID)
